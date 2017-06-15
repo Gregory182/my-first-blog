@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Strona Grzegorza</title>
+	</head>
+	<div>
+		<h1><a href="">Pierwsze Kroki moje w Pythonie</a></h1>
+	</div>
+	<body>
+	{%for post in posts %}
+		<p>published:{{ post.published_date }}</p>
+		<h1><a href="">{{post.title }}</a></h1>
+		<p>{{post.tekst|linebreaksbr}}</p>
+	{% endfor %}
+	</body>
+</html>
